@@ -2,3 +2,7 @@
 	path = script.module.urlresolver
 	url = https://github.com/nkvoronov/script.module.urlresolver.git
 	branch = vk_4.0.17
+[submodule "script.module.selenium"]
+	path = script.module.selenium
+	url = https://github.com/nkvoronov/script.module.selenium.git
+	branch = master

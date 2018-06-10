@@ -24,6 +24,25 @@
     </extension>
 </addon>
 
+<addon id="script.module.selenium"
+		name="Selenium and Web Drivers"
+		version="3.12.3.001"
+		provider-name="YDRAGON">
+	<requires>
+		<import addon="xbmc.python" version="2.18.0" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary>Selenium automates browsers.</summary>
+		<description>Selenium has the support of some of the largest browser vendors who have taken (or are taking) steps to make Selenium a native part of their browser. It is also the core technology in countless other browser automation tools, APIs and frameworks.</description>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <platform>all</platform>
+        <email>nkvoronov@gmail.com</email>
+		<source>https://github.com/nkvoronov/script.module.selenium.git</source>
+	</extension>
+</addon>
+
 <addon id="script.module.urlresolver" name="URLResolver" version="4.0.17.005" provider-name="Eldorado, tknorris, tvaddons">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
