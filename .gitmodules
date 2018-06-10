@@ -1,0 +1,4 @@
+[submodule "script.module.urlresolver"]
+	path = script.module.urlresolver
+	url = https://github.com/nkvoronov/script.module.urlresolver.git
+	branch = vk_4.0.17
