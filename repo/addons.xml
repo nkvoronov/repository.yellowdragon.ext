@@ -69,13 +69,13 @@
 
 <addon id="script.module.webvideonodes"
 		name="Web Video Nodes"
-		version="1.0.0"
+		version="1.0.1"
 		provider-name="YDRAGON">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.beautifulsoup" version="3.2.1" />
-        <import addon="script.module.selenium" version="3.0.0" />
-        <import addon="script.module.urlresolver" version="2.10.0" />
+		<import addon="script.module.selenium" version="3.0.0" />
+		<import addon="script.module.urlresolver" version="2.10.0" />
 	</requires>
 	<extension point="xbmc.python.module" library="lib" />
 	<extension point="xbmc.addon.metadata">
@@ -83,9 +83,9 @@
 		<summary>Web Video Nodes</summary>
 		<description>Web Video Nodes</description>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-        <platform>all</platform>
-        <email>nkvoronov@gmail.com</email>
-		<source></source>
+		<platform>all</platform>
+		<email>nkvoronov@gmail.com</email>
+		<source>https://github.com/nkvoronov/script.module.webvideonodes.git</source>
 	</extension>
 </addon>
 </addons>
