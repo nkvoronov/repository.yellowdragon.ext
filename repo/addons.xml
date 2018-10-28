@@ -26,7 +26,7 @@
 
 <addon id="script.module.selenium"
 		name="Selenium and Web Drivers"
-		version="3.12.4.002"
+		version="3.14.1.003"
 		provider-name="YDRAGON">
 	<requires>
 		<import addon="xbmc.python" version="2.18.0" />
@@ -43,7 +43,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="5.0.20.006" provider-name="Eldorado, tknorris, tvaddons">
+<addon id="script.module.urlresolver" name="URLResolver" version="5.0.24.007" provider-name="Eldorado, tknorris, tvaddons">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="plugin.video.youtube" optional="true" />
