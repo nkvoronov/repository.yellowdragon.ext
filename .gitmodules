@@ -9,4 +9,4 @@
 [submodule "script.module.webvideonodes"]
 	path = script.module.webvideonodes
 	url = https://github.com/nkvoronov/script.module.webvideonodes.git
-	branch = master
+	branch = vleia
