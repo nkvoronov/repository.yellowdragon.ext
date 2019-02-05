@@ -5,7 +5,7 @@
 [submodule "script.module.selenium"]
 	path = script.module.selenium
 	url = https://github.com/nkvoronov/script.module.selenium.git
-	branch = v3.14.1
+	branch = v3.141.59
 [submodule "script.module.webvideonodes"]
 	path = script.module.webvideonodes
 	url = https://github.com/nkvoronov/script.module.webvideonodes.git
