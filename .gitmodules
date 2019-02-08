@@ -10,3 +10,11 @@
 	path = script.module.webvideonodes
 	url = https://github.com/nkvoronov/script.module.webvideonodes.git
 	branch = vleia
+[submodule "plugin.image.pdf2reader"]
+	path = plugin.image.pdf2reader
+	url = https://github.com/nkvoronov/plugin.image.pdf2reader.git
+	branch = vleia
+[submodule "script.module.pdf2image"]
+	path = script.module.pdf2image
+	url = https://github.com/nkvoronov/script.module.pdf2image.git
+	branch = vleia
