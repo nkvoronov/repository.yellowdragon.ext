@@ -18,7 +18,7 @@
   </extension>
 </addon>
 
-<addon id="repository.yellowdragon.ext" name="Yellow Dragon Repository Ext" version="18.1" provider-name="YLLOW_DRAGON">
+<addon id="repository.yellowdragon.ext" name="Yellow Dragon Repository Ext" version="18.2" provider-name="YLLOW_DRAGON">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
     </requires>
@@ -63,7 +63,7 @@
 
 <addon id="script.module.selenium"
 		name="Selenium and Web Drivers"
-		version="3.141.59.007"
+		version="3.141.59.008"
 		provider-name="YDRAGON">
 	<requires>
 		<import addon="xbmc.python" version="2.18.0" />
@@ -81,7 +81,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="5.0.32.008" provider-name="Eldorado, tknorris, tvaddons">
+<addon id="script.module.urlresolver" name="URLResolver" version="5.0.34.009" provider-name="Eldorado, tknorris, tvaddons">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="plugin.video.youtube" optional="true" />
