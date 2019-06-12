@@ -1,7 +1,7 @@
 [submodule "script.module.urlresolver"]
 	path = script.module.urlresolver
 	url = https://github.com/nkvoronov/script.module.urlresolver.git
-	branch = v5.0.35
+	branch = v5.0.36
 [submodule "script.module.selenium"]
 	path = script.module.selenium
 	url = https://github.com/nkvoronov/script.module.selenium.git
