@@ -1,20 +1,20 @@
 [submodule "script.module.urlresolver"]
 	path = script.module.urlresolver
 	url = https://github.com/nkvoronov/script.module.urlresolver.git
-	branch = v5.0.46
+	branch = vmatrix
 [submodule "script.module.selenium"]
 	path = script.module.selenium
 	url = https://github.com/nkvoronov/script.module.selenium.git
-	branch = v3.141.59
+	branch = vmatrix
 [submodule "script.module.webvideonodes"]
 	path = script.module.webvideonodes
 	url = https://github.com/nkvoronov/script.module.webvideonodes.git
-	branch = vleia
+	branch = vmatrix
 [submodule "plugin.image.pdf2reader"]
 	path = plugin.image.pdf2reader
 	url = https://github.com/nkvoronov/plugin.image.pdf2reader.git
-	branch = vleia
+	branch = vmatrix
 [submodule "script.module.pdf2image"]
 	path = script.module.pdf2image
 	url = https://github.com/nkvoronov/script.module.pdf2image.git
-	branch = vleia
+	branch = vmatrix
