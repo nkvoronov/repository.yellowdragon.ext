@@ -1,11 +1,11 @@
 [submodule "script.module.urlresolver"]
 	path = script.module.urlresolver
 	url = https://github.com/nkvoronov/script.module.urlresolver.git
-	branch = v5.0.46
+	branch = vleia
 [submodule "script.module.selenium"]
 	path = script.module.selenium
 	url = https://github.com/nkvoronov/script.module.selenium.git
-	branch = v3.141.59
+	branch = vleia
 [submodule "script.module.webvideonodes"]
 	path = script.module.webvideonodes
 	url = https://github.com/nkvoronov/script.module.webvideonodes.git
