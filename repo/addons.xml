@@ -82,7 +82,7 @@
 
 <addon id="script.module.selenium"
 		name="Selenium and Web Drivers"
-		version="3.141.59.018"
+		version="3.141.59.019"
 		provider-name="YDRAGON">
 	<requires>
 		<import addon="xbmc.python" version="2.18.0" />
