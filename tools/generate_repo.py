@@ -257,7 +257,7 @@ class Generator:
                     # skip encoding format line
                     if ( line.find( '<?xml' ) >= 0 ): continue
                     # add line
-                    addon_xml += unicode( line.rstrip() + '\n', 'utf-8' )
+                    addon_xml += line.rstrip() + '\n'
                 # we succeeded so add to our final addons.xml text
                 addons_xml += addon_xml.rstrip() + '\n\n'
             except Exception as e:
