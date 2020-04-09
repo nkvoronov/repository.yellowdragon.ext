@@ -270,7 +270,12 @@ class Generator:
     def _generate_md5_file( self, pfile ):
         try:
             # create a new md5 hash
-            m = hashlib.md5.new( open(pfile).read() ).hexdigest()
+            md5_hash = hashlib.md5()
+            with open(pfile,"rb") as f:
+                # Read and update hash in chunks of 4K
+                for byte_block in iter(lambda: f.read(4096),b""):
+                    md5_hash.update(byte_block)
+            m = md5_hash.hexdigest()
             # save file
             self._save_file( m, file=pfile + ".md5" )
         except Exception as e:
