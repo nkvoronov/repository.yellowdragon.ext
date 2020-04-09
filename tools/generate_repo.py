@@ -4,6 +4,7 @@
 """ Modified by BartOtten: create a repository addon, skip folders without addon.xml, user config file """
 
 """ This file is "as is", without any warranty whatsoever. Use as own risk """
+""" Python 3 """
 
 import os
 import re
