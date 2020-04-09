@@ -7,13 +7,15 @@
 
 import os
 import re
-import md5
+import hashlib
+#import md5
 import zipfile
 import shutil
 from xml.dom import minidom
 import glob
 import datetime
-from ConfigParser import SafeConfigParser
+import configparser
+#from ConfigParser import SafeConfigParser
 
 class Generator:
 
@@ -28,7 +30,7 @@ class Generator:
         """
         Load the configuration
         """
-        self.config = SafeConfigParser()
+        self.config = configparser.ConfigParser()
         self.config.read('config.ini')
 
         self.gitcomment = "Update to version " + self.config.get('addon', 'version')
@@ -48,7 +50,7 @@ class Generator:
         self._generate_md5_file(self.output_path + "addons.xml")
         self._generate_zip_files()
         # notify user
-        print "Finished updating addons xml, md5 files and zipping addons"
+        print("Finished updating addons xml, md5 files and zipping addons")
         self._post_run()
 
     def _update_submodules ( self ):
@@ -58,24 +60,24 @@ class Generator:
             fsubmodules = open(".gitmodules", "r").read()
             lsubmodules = re.compile('\[submodule "(.+?)"\]').findall(fsubmodules)
             for submodule in lsubmodules:
-                print "Update module - " + str(submodule)
+                print("Update module - " + str(submodule))
                 os.system('git submodule update --init --recursive --force --remote -- "' + submodule + '"')
 
     def _push_to_git ( self ):
 
-        print "GIT commit"
+        print("GIT commit")
         # git commit
         os.system('git add --all')
         os.system('git commit -m "' + self.gitcomment + '"')
 
-        print "GIT Push"
+        print("GIT Push")
         # push data to git
         os.system('git push')
 
     def _pre_run ( self ):
 
         # update git
-        print "GIT Pull"
+        print("GIT Pull")
         os.system('git pull')
 
         # current revision + 1
@@ -96,7 +98,7 @@ class Generator:
         else:
             self.gitcomment = self.gitcomment + " (" + self.revision_str + ")"
 
-        print "########## " + self.gitcomment + " ##########"
+        print("########## " + self.gitcomment + " ##########")
 
         # update submodules
         self._update_submodules()
@@ -147,7 +149,7 @@ class Generator:
 
         if os.path.isfile(addonid + os.path.sep + "addon.xml"):return
 
-        print "Create repository addon"
+        print("Create repository addon")
 
         with open (self.tools_path + os.path.sep + "template.xml", "r") as template:
             template_xml=template.read()
@@ -207,11 +209,11 @@ class Generator:
 
                 self._copy_resources(addonid, document)
 
-            except Exception, e:
-                print e
+            except Exception as e:
+                print(e)
 
     def _generate_zip_file ( self, path, version, addonid):
-        print "Generate zip file for " + addonid + " " + version
+        print("Generate zip file for " + addonid + " " + version)
         filename = path + "-" + version + ".zip"
         try:
             zip = zipfile.ZipFile(filename, 'w', zipfile.ZIP_DEFLATED)
@@ -232,8 +234,8 @@ class Generator:
             if zip_md5 == "true":
                 self._generate_md5_file(self.output_path + addonid + os.path.sep + filename)
 
-        except Exception, e:
-            print e
+        except Exception as e:
+            print(e)
 
     def _generate_addons_file( self ):
         # addon list
@@ -259,9 +261,9 @@ class Generator:
                     addon_xml += unicode( line.rstrip() + "\n", "utf-8" )
                 # we succeeded so add to our final addons.xml text
                 addons_xml += addon_xml.rstrip() + "\n\n"
-            except Exception, e:
+            except Exception as e:
                 # missing or poorly formatted addon.xml
-                print "Excluding %s for %s" % ( _path, e, )
+                print("Excluding %s for %s" % ( _path, e, ))
         # clean and add closing tag
         addons_xml = addons_xml.strip() + u"\n</addons>\n"
         # save file
@@ -273,17 +275,17 @@ class Generator:
             m = md5.new( open(pfile).read() ).hexdigest()
             # save file
             self._save_file( m, file=pfile + ".md5" )
-        except Exception, e:
+        except Exception as e:
             # oops
-            print "An error occurred creating addons.xml.md5 file!\n%s" % ( e, )
+            print("An error occurred creating addons.xml.md5 file!\n%s" % ( e, ))
 
     def _save_file( self, data, file ):
         try:
             # write data to the file
             open( file, "w" ).write( data )
-        except Exception, e:
+        except Exception as e:
             # oops
-            print "An error occurred saving %s file!\n%s" % ( file, e, )
+            print("An error occurred saving %s file!\n%s" % ( file, e, ))
 
     def _copy_resources( self, addonid, document):
 
