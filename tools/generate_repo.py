@@ -8,14 +8,12 @@
 import os
 import re
 import hashlib
-#import md5
 import zipfile
 import shutil
 from xml.dom import minidom
 import glob
 import datetime
 import configparser
-#from ConfigParser import SafeConfigParser
 
 class Generator:
 
@@ -272,7 +270,7 @@ class Generator:
     def _generate_md5_file( self, pfile ):
         try:
             # create a new md5 hash
-            m = md5.new( open(pfile).read() ).hexdigest()
+            m = hashlib.md5.new( open(pfile).read() ).hexdigest()
             # save file
             self._save_file( m, file=pfile + ".md5" )
         except Exception as e:
