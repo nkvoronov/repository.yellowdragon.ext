@@ -266,7 +266,7 @@ class Generator:
         # clean and add closing tag
         addons_xml = addons_xml.strip() + u"\n</addons>\n"
         # save file
-        self._save_file( addons_xml.encode( "utf-8" ), file=self.output_path + 'addons.xml' )
+        self._save_file( addons_xml, file=self.output_path + 'addons.xml' )
 
     def _generate_md5_file( self, pfile ):
         try:

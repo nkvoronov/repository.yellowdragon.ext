@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.image.pdf2reader" name="PDF to Reader" version="1.0.3.004" provider-name="YDRAGON">
+	<requires>
+		<import addon="xbmc.python" version="2.18.0"/>
+		<import addon="script.module.pdf2image" version="1.4.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>image</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<language>en</language>
+		<platform>all</platform>
+		<summary lang="en_GB">PDF Reader</summary>
+		<summary lang="ru_RU">PDF Reader</summary>
+		<summary lang="uk_UA">PDF Reader</summary>
+		<description lang="en_GB">Read your pdf's.</description>
+		<description lang="ru_RU">Прочитайте свой PDF.</description>
+		<description lang="uk_UA">Прочитайте свій PDF.</description>
+		<platform>all</platform>
+		<license>GPL 2.0</license>
+		<email>nkvoronov@gmail.com</email>
+		<source>https://github.com/nkvoronov/plugin.image.pdf2reader.git</source>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.yellowdragon.ext" name="Yellow Dragon Repository Ext" version="18.6" provider-name="YLLOW_DRAGON">
+	<requires>
+		<import addon="xbmc.addon" version="12.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.repository" name="Yellow Dragon Repository Ext">
+		<info compressed="false">https://raw.githubusercontent.com/nkvoronov/repository.yellowdragon.ext/leia/repo/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/nkvoronov/repository.yellowdragon.ext/leia/repo/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/nkvoronov/repository.yellowdragon.ext/leia/repo/</datadir>
+		<hashes>false</hashes>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">YLLOW_DRAGON EXT addons repository for KODI Leia</summary>
+		<summary lang="ru_RU">Репозиторий дополнений YLLOW_DRAGON EXT для KODI Leia</summary>
+		<summary lang="uk_UA">Репозиторій доповнень YLLOW_DRAGON EXT для KODI Leia</summary>
+		<description  lang="en_GB">Download and install YLLOW_DRAGON EXT addons repository.</description>
+		<description  lang="ru_RU">Загружайте и устанавливайте дополнения из репозитория YLLOW_DRAGON EXT.</description>
+		<description  lang="uk_UA">Завантажуйте та встановлюйте доповненя з репозиторію YLLOW_DRAGON EXT.</description>
+		<platform>all</platform>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+		</assets>
+		<news></news>
+	</extension>
+</addon>
+
+<addon id="script.module.pdf2image"
+		name="PDF to Image"
+		version="1.4.1.004"
+		provider-name="YDRAGON">
+	<requires>
+		<import addon="xbmc.python" version="2.18.0" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en_gb">convert PDF to PIL Image object.</summary>
+		<summary lang="ru_RU">конвертировать PDF в объект PIL Image.</summary>
+		<summary lang="uk_UA">конвертувати PDF в об'єкт PIL Image.</summary>
+		<description lang="en_gb">A python module that wraps the pdftoppm utility to convert PDF to PIL Image object</description>
+		<description lang="ru_RU">Модуль Python, который оборачивает утилиту pdftoppm для преобразования PDF в объект PIL Image</description>
+		<description lang="uk_UA">Модуль Python, який обертає утиліту pdftoppm для перетворення PDF в об'єкт PIL Image</description>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<platform>all</platform>
+		<email>nkvoronov@gmail.com</email>
+		<source>https://github.com/nkvoronov/script.module.pdf2image.git</source>
+		<assets>
+			<icon>resources/icon.png</icon>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="script.module.selenium"
+		name="Selenium and Web Drivers"
+		version="3.141.59.019"
+		provider-name="YDRAGON">
+	<requires>
+		<import addon="xbmc.python" version="2.18.0" />
+		<import addon="script.module.urllib3" version="1.0" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en_gb">Selenium automates browsers.</summary>
+		<summary lang="ru_RU">Selenium автоматизация браузеров.</summary>
+		<summary lang="uk_UA">Selenium автоматизація браузерів.</summary>
+		<description lang="en_gb">Selenium has the support of some of the largest browser vendors who have taken (or are taking) steps to make Selenium a native part of their browser. It is also the core technology in countless other browser automation tools, APIs and frameworks.</description>
+		<description lang="ru_RU">Selenium имеет поддержку крупнейших поставщиков браузеров, которые предприняли (или предпринимают) шаги, чтобы сделать Selenium встроенной частью своего браузера. Это также основная технология в бесчисленных других инструментах автоматизации браузеров, API-интерфейсах и инфраструктурах.</description>
+		<description lang="uk_UA">Selenium має підтримку найбільших постачальників браузерів, які зробили (або роблять) кроки, щоб зробити Selenium вбудованої частиною свого браузера. Це також впровадженню найважливіших технологічних досягнень в незліченних інших інструментах автоматизації браузерів, API-інтерфейсів і інфраструктурах.</description>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<platform>all</platform>
+		<email>nkvoronov@gmail.com</email>
+		<source>https://github.com/nkvoronov/script.module.selenium.git</source>
+		<assets>
+			<icon>resources/icon.png</icon>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="script.module.urlresolver" name="URLResolver" version="5.0.61.019" provider-name="Eldorado, tknorris, tvaddons">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="plugin.video.youtube" optional="true" />
+		<import addon="script.module.python.twitch" optional="true" />
+		<import addon="script.module.cryptopy" version="1.2.6" optional="true" />
+		<import addon="plugin.video.gdrive" optional="true" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.python.pluginsource" library="lib/default.py" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en_GB">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+		<summary lang="ru_RU">Разрешите общие URL-адреса хостов видео для воспроизведения в XBMC/Kodi.</summary>
+		<summary lang="uk_UA">Дозвольте загальні URL-адреси хостів відео для відтворення в XBMC/Kodi.</summary>
+		<description lang="en_GB">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+		<description lang="ru_RU">Разрешение общих URL-адресов хостов видео для воспроизведения в XBMC/Kodi, упрощение разработки дополнений для видео-плагинов, требующих нескольких хостов видео.</description>
+		<description lang="uk_UA">Дозвіл загальних URL-адрес хостів відео для відтворення в XBMC/Kodi, спрощення розробки додатків для відео-плагінів, які потребують декількох хостів відео.</description>
+		<forum>https://www.tvaddons.co/forums</forum>
+		<website>https://www.tvaddons.co</website>
+		<email>nkvoronov@gmail.com</email>
+		<source>https://github.com/nkvoronov/script.module.urlresolver.git</source>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="script.module.webvideonodes"
+		name="Web Video Nodes"
+		version="1.5.8"
+		provider-name="YDRAGON">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.selenium" version="3.0.0" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en_gb">Web Video Nodes</summary>
+		<summary lang="ru_RU">Web Video Nodes</summary>
+		<summary lang="uk_UA">Web Video Nodes</summary>
+		<description lang="en_gb">Web Video Nodes</description>
+		<description lang="ru_RU">Web Video Nodes</description>
+		<description lang="uk_UA">Web Video Nodes</description>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<platform>all</platform>
+		<email>nkvoronov@gmail.com</email>
+		<source>https://github.com/nkvoronov/script.module.webvideonodes.git</source>
+		<assets>
+			<icon>resources/icon.png</icon>
+		</assets>
+	</extension>
+</addon>
+</addons>
