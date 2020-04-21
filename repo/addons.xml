@@ -107,7 +107,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="5.0.61.019" provider-name="Eldorado, tknorris, tvaddons">
+<addon id="script.module.urlresolver" name="URLResolver" version="5.0.62.020" provider-name="Eldorado, tknorris, tvaddons">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="plugin.video.youtube" optional="true" />
@@ -138,7 +138,7 @@
 
 <addon id="script.module.webvideonodes"
 		name="Web Video Nodes"
-		version="1.5.8"
+		version="1.5.9"
 		provider-name="YDRAGON">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
