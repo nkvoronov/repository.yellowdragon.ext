@@ -140,7 +140,7 @@
 
 <addon id="script.module.webvideonodes"
 		name="Web Video Nodes"
-		version="1.7.3"
+		version="1.7.4"
 		provider-name="YDRAGON">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
@@ -149,12 +149,12 @@
 	<extension point="xbmc.python.module" library="lib" />
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
-		<summary lang="en_gb">Web Video Nodes</summary>
-		<summary lang="ru_RU">Web Video Nodes</summary>
-		<summary lang="uk_UA">Web Video Nodes</summary>
-		<description lang="en_gb">Web Video Nodes</description>
-		<description lang="ru_RU">Web Video Nodes</description>
-		<description lang="uk_UA">Web Video Nodes</description>
+		<summary lang="en_gb">Web Video Nodes.</summary>
+		<summary lang="ru_RU">Web Video Nodes.</summary>
+		<summary lang="uk_UA">Web Video Nodes.</summary>
+		<description lang="en_gb">Web Video Nodes.</description>
+		<description lang="ru_RU">Web Video Nodes.</description>
+		<description lang="uk_UA">Web Video Nodes.</description>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
 		<platform>all</platform>
 		<email>nkvoronov@gmail.com</email>
