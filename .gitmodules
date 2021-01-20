@@ -18,3 +18,7 @@
 	path = script.module.pdf2image
 	url = https://github.com/nkvoronov/script.module.pdf2image.git
 	branch = vmatrix
+[submodule "script.module.webdriver"]
+	path = script.module.webdriver
+	url = https://github.com/nkvoronov/script.module.webdriver.git
+	branch = vmatrix

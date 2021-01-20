@@ -81,8 +81,8 @@
 </addon>
 
 <addon id="script.module.selenium"
-		name="Selenium and Web Drivers"
-		version="3.141.59.041"
+		name="Selenium"
+		version="3.141.59.042"
 		provider-name="YDRAGON">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
@@ -138,13 +138,39 @@
 	</extension>
 </addon>
 
+<addon id="script.module.webdriver"
+		name="Web Drivers for Selenium"
+		version="1.0.0.001"
+		provider-name="YDRAGON">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en_gb">Web Drivers for Selenium.</summary>
+		<summary lang="ru_RU">Веб драйвера для Selenium.</summary>
+		<summary lang="uk_UA">Веб драйвера для Selenium.</summary>
+		<description lang="en_gb">Web Drivers for Selenium.</description>
+		<description lang="ru_RU">Веб драйвера для Selenium.</description>
+		<description lang="uk_UA">Веб драйвера для Selenium.</description>
+		<platform>all</platform>
+		<email>nkvoronov@gmail.com</email>
+		<source>https://github.com/nkvoronov/script.module.webdriver.git</source>
+		<assets>
+			<icon>resources/icon.png</icon>
+		</assets>
+	</extension>
+</addon>
+
 <addon id="script.module.webvideonodes"
 		name="Web Video Nodes"
-		version="1.7.5"
+		version="1.7.6"
 		provider-name="YDRAGON">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.selenium" version="3.141.59" />
+		<import addon="script.module.webdriver" version="1.0.0" />
 	</requires>
 	<extension point="xbmc.python.module" library="lib" />
 	<extension point="xbmc.addon.metadata">
