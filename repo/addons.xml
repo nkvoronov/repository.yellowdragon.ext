@@ -144,7 +144,7 @@
 		provider-name="YDRAGON">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
-		<import addon="script.module.selenium" version="3.0.0" />
+		<import addon="script.module.selenium" version="3.141.59" />
 	</requires>
 	<extension point="xbmc.python.module" library="lib" />
 	<extension point="xbmc.addon.metadata">
