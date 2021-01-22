@@ -140,10 +140,12 @@
 
 <addon id="script.module.webdriver"
 		name="Web Drivers for Selenium"
-		version="1.1.0.002"
+		version="1.1.1.003"
 		provider-name="YDRAGON">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
+		<import addon="script.module.beautifulsoup4" version="4.8.2"/>
+		<import addon="script.module.urlresolver" version="5.1.0" />
 	</requires>
 	<extension point="xbmc.python.library" library="default.py"/>
 	<extension point="xbmc.addon.metadata">
