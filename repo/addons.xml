@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.image.pdf2reader" name="PDF to Reader" version="1.0.4.005" provider-name="YDRAGON">
+<addon id="plugin.image.pdf2reader" name="PDF to Reader" version="2.0.4.006" provider-name="YDRAGON">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.pdf2image" version="1.4.1"/>
+		<import addon="script.module.pdf2image" version="1.4.2"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="addon.py">
 		<provides>image</provides>
@@ -56,7 +56,7 @@
 
 <addon id="script.module.pdf2image"
 		name="PDF to Image"
-		version="1.4.2.004"
+		version="1.4.2.005"
 		provider-name="YDRAGON">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
